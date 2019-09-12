@@ -1,0 +1,51 @@
+<h2>Create Product</h2>
+
+<%= form_for(@product,:url => products_path, :method => 'post') do |f| %>
+    <table summary="Product form fields">
+        <tr>
+            <th>Name</th>
+            <td><%= f.text_field(:name) %></td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td><%= f.text_field(:description) %></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td><%= f.text_field(:price) %></td>
+        </tr>
+       
+        <tr>
+            <th>CPU</th>
+            <td><%= f.text_field(:cpu) %></td>
+        </tr>
+        <tr>
+            <th>Camera</th>
+            <td><%= f.text_field(:camera) %></td>
+        </tr>
+        <tr>
+            <th>Size</th>
+            <td><%= f.text_field(:size) %></td>
+        </tr>
+        <tr>
+            <th>Weight</th>
+            <td><%= f.text_field(:weight) %></td>
+        </tr>
+        <tr>
+            <th>Display</th>
+            <td><%= f.text_field(:display) %></td>
+        </tr>
+        <tr>
+            <th>Battery</th>
+            <td><%= f.text_field(:battery) %></td>
+        </tr>
+        <tr>
+            <th>Memory</th>
+            <td><%= f.text_field(:memory) %></td>
+        </tr>
+    </table>
+
+    <div class="form-buttons">
+        <%= f.submit("Create Subject") %>
+    </div>
+<% end %>
